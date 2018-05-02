@@ -4,7 +4,7 @@
 *{box-sizing:border-box}
 *:before,*:after{box-sizing: border-box}
 
-body{margin-left:auto;margin-right:auto;min-width:998px;font-size:16px}
+body{margin-left:auto;margin-right:auto;font-size:16px}
 h1, h2, h3, h4, h5, h6{margin-bottom:8px}
 p{margin-bottom:16px}
 address{margin-bottom:16px}
@@ -496,9 +496,8 @@ h6,.h6{font-size:16px}
 .col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,
 .nav-link{float:left}
 
-.row,.container-fluid,.container, section, footer, aside{clear:both;display:block;max-width:992px}
+.row,.container-fluid,.container, section, footer, aside{clear:both;display:block}
 
-/** All media-queries (min-width:576px) **/
 .float-sm-left{float:left!important}
 .float-sm-right{float:right!important}
 .float-sm-none{float:none!important}
@@ -516,7 +515,6 @@ h6,.h6{font-size:16px}
 .d-flex,.d-sm-flex,.d-md-flex,.d-lg-flex,.d-xl-flex,.d-print-flex{display:block!important}
 .d-inline-flex,.d-sm-inline-flex,.d-md-inline-flex,.d-lg-inline-flex,.d-xl-inline-flex,.d-print-inline-flex{display:inline-block!important}
 
-/** All media-queries (min-width:768px) **/
 .d-md-none{display:none!important}
 .d-md-inline{display:inline!important}
 .d-md-inline-block{display:inline-block!important}
@@ -649,8 +647,6 @@ h6,.h6{font-size:16px}
   margin-left: 48px !important;
 }
 
-/** All media-queries (min-width:992px) **/
-.container{max-width:960px}
 .col-lg{max-width:100%}
 .col-lg-auto{width:auto;max-width:none}
 .navbar-expand .navbar-nav .dropdown-menu,

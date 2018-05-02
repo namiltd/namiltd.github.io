@@ -359,7 +359,14 @@
   <!--<![endif]-->
   <!--[if lte IE 8]>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script>
+      $(window).bind("load", function() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+      });
+    </script
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.js"></script>
   <![endif]-->
   </body>
