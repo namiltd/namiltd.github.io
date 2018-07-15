@@ -7,16 +7,17 @@
   <title>Example</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!--[if IE 9]>
-			<link href="css/bootstrap-ie9.css" rel="stylesheet">
-			<script src="js/bootstrap-ie9.js"></script>
-		<![endif]-->
+      <link href="css/bootstrap-ie9.css" rel="stylesheet">
+      <script src="js/bootstrap-ie9.js"></script>
+  <![endif]-->
   <!--[if IE 8]>
-			<link href="css/bootstrap-ie8.css" rel="stylesheet">
-			<script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
-			<script src="js/bootstrap-ie8.js"></script>
-		<![endif]-->
+      <link href="css/bootstrap-ie8.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+      <script src="js/bootstrap-ie8.js"></script>
+  <![endif]-->
   <!--[if lt IE 8]>
 			<script>
 				alert('You are using an unsupported browser. Update Internet Explorer to at least version 8');
@@ -93,6 +94,8 @@
               <a class="dropdown-item" href="#grid">Grid</a>
               <a class="dropdown-item" href="#media-object">Media Object</a>
               <a class="dropdown-item" href="#carousel">Carousel</a>
+              <a class="dropdown-item" href="#flexbox">Flexbox</a>
+              <a class="dropdown-item" href="#embeds">Responsive Embeds</a>
             </div>
           </li>
         </ul>
@@ -102,7 +105,7 @@
             <a class="nav-link" href="#" hidden>Test</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/coliff/bootstrap-ie8">GitHub</a>
+            <a class="nav-link" href="https://github.com/namiltd/bootstrap-ie8">GitHub</a>
           </li>
         </ul>
 
@@ -346,7 +349,7 @@
             <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
           </p>
 
-          <div class="bs-component" style="margin-bottom: 15px;">
+          <div class="bs-component mb-3">
             <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-primary active">
                 <input type="checkbox" checked> Checkbox 1
@@ -360,7 +363,7 @@
             </div>
           </div>
 
-          <div class="bs-component" style="margin-bottom: 15px;">
+          <div class="bs-component mb-3">
             <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-primary active">
                 <input type="radio" name="options" id="option1" checked> Radio 1
@@ -385,7 +388,7 @@
             </div>
           </div>
 
-          <div class="bs-component" style="margin-bottom: 15px;">
+          <div class="bs-component md-3">
             <div class="btn-group" role="group" aria-label="Basic example">
               <button type="button" class="btn btn-secondary">Left</button>
               <button type="button" class="btn btn-secondary">Middle</button>
@@ -393,7 +396,7 @@
             </div>
           </div>
 
-          <div class="bs-component" style="margin-bottom: 15px;">
+          <div class="bs-component mb-3">
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
               <div class="btn-group mr-2" role="group" aria-label="First group">
                 <button type="button" class="btn btn-secondary">1</button>
@@ -828,7 +831,7 @@
         </div>
       </div>
 
-      <div class="row" style="margin-bottom: 2rem;">
+      <div class="row mb-2">
         <div class="col-lg-6">
           <h2 id="nav-tabs">Tabs</h2>
           <div class="bs-component">
@@ -1102,7 +1105,7 @@
       </div>
       <div>
         <h2>Badges</h2>
-        <div class="bs-component" style="margin-bottom: 40px;">
+        <div class="bs-component mb-5">
           <span class="badge badge-primary">Primary</span>
           <span class="badge badge-secondary">Secondary</span>
           <span class="badge badge-success">Success</span>
@@ -1486,9 +1489,9 @@
                     <p>Modal body text goes here.</p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" data-toggle="modal" data-target="#source-modal-sm" class="btn btn-primary">Source-sm</button>
-                    <button type="button" data-toggle="modal" data-target="#source-modal" class="btn btn-primary">Source</button>
-                    <button type="button" data-toggle="modal" data-target="#source-modal-lg" class="btn btn-primary">Source-lg</button>
+                    <button type="button" data-toggle="modal" data-target="#source-modal-sm" class="btn btn-primary">modal-sm</button>
+                    <button type="button" data-toggle="modal" data-target="#source-modal" class="btn btn-primary">modal</button>
+                    <button type="button" data-toggle="modal" data-target="#source-modal-lg" class="btn btn-primary">modal-lg</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
                 </div>
@@ -1498,7 +1501,7 @@
         </div>
         <div class="col-lg-6">
           <h2>Popovers</h2>
-          <div class="bs-component" style="margin-bottom: 3em;">
+          <div class="bs-component mb-5">
             <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left"
               data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
 
@@ -1760,7 +1763,7 @@
     </div>
 
 
-    <div class="bs-docs-section" id="flexbox">
+    <div class="bs-docs-section" id="embeds">
       <div class="row">
         <div class="col-md-6">
           <div class="page-header">
@@ -1803,7 +1806,7 @@
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Source Code</h4>
+            <h4 class="modal-title">modal-sm</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
@@ -1817,7 +1820,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Source Code</h4>
+            <h4 class="modal-title">modal</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
@@ -1831,7 +1834,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Source Code</h4>
+            <h4 class="modal-title">modal-lg</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
@@ -1857,9 +1860,9 @@
   </div>
 
   <!--[if gte IE 9]><!-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
   <!--<![endif]-->
   <!--[if lte IE 8]>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
