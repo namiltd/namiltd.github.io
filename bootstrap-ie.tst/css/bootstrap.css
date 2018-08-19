@@ -5557,15 +5557,15 @@ button.close {
     max-width: 500px;
     margin: 1.75rem auto;
   }
-
   .modal-dialog-centered {
     min-height: calc(100% - (1.75rem * 2));
   }
-
   .modal-dialog-centered::before {
     height: calc(100vh - (1.75rem * 2));
   }
-
+  .modal-sm {
+    max-width: 300px;
+  }
   .modal-lg, .modal-xl {
     max-width: 500px;
   }
