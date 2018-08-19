@@ -5548,6 +5548,10 @@ button.close {
   overflow: scroll;
 }
 
+.modal-sm {
+  max-width: 300px;
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
@@ -5558,6 +5562,9 @@ button.close {
   }
   .modal-dialog-centered::before {
     height: calc(100vh - (1.75rem * 2));
+  }
+  .modal-sm {
+    max-width: 300px;
   }
   .modal-lg, .modal-xl {
     max-width: 500px;
@@ -5574,10 +5581,6 @@ button.close {
   .modal-xl {
     max-width: 1140px;
   }
-}
-
-.modal-sm {
-  max-width: 300px;
 }
 
 .tooltip {
