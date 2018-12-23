@@ -19,11 +19,11 @@
       <script src="js/bootstrap-ie8.js"></script>
   <![endif]-->
   <!--[if lt IE 8]>
-			<script>
-				alert('You are using an unsupported browser. Update Internet Explorer to at least version 8');
-				die();
-			</script>
-		<![endif]-->
+      <script>
+          alert('You are using an unsupported browser. Update Internet Explorer to at least version 8');
+          die();
+      </script>
+  <![endif]-->
   <style>
     .bs-component .modal {
       position: relative;
@@ -821,6 +821,14 @@
                   <input type="file" id="file2" class="custom-file-input">
                   <span class="custom-file-control"></span>
                 </label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
               </div>
             </fieldset>
           </div>
@@ -1885,14 +1893,16 @@
 
   <!--[if gte IE 9]><!-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-      $('[data-toggle="popover"]').popover();
-    })
-  </script>
+  <!--<![endif]-->
+  <!--[if !IE]><!-->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+      })
+    </script>
   <!--<![endif]-->
   <!--[if lte IE 8]>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
